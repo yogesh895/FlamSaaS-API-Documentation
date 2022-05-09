@@ -1,0 +1,49 @@
+site_name: Flam Developer's Documentation
+theme:
+  name: material
+  palette:
+   primary: black
+   accent: black
+  logo: https://flamapp.com/images/flam.svg
+  favicon: https://flamapp.com/images/flam.svg
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - header.autohide
+nav:
+  - Home: index.md
+  - API Reference's:
+    - About: apiReference/about.md
+    - User Related API's: 
+      - Token API: apiReference/token.md
+      - Product API: apiReference/products.md
+    - Product Related API's:
+      - Partner API: apiReference/partnervc.md
+      - Order Details API: apiReference/orderdetails.md
+  - FAQ's: faqs.md
+  - Contact Us: contactus.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg 
+  
+extra_css:
+  - stylesheets/extra.css
+
+
+
